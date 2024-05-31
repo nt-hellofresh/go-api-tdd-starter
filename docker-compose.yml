@@ -1,0 +1,14 @@
+---
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: local-pg-instance
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: default
+    ports:
+      - "52345:5432"
+    restart: always
