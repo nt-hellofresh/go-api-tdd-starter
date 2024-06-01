@@ -13,4 +13,4 @@ This is a demo project for building a well tested API in Go using TDD. This exam
 1. Run `make dev-up` to run a local docker instance of postgres.
 2. Run `make test` to run the tests and generate coverage.
 3. Run `make coverage` to view the coverage report.
-4. 
+4. To tear down the stack, run `make dev-down`.
